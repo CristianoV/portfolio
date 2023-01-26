@@ -15,8 +15,8 @@ export function Header() {
 
         <nav>
           <ActiveLink href='/' texto='Home' />
-          <ActiveLink href='/posts' texto='Conteúdos' />
-          <ActiveLink href='/sobre' texto='Habilidades' />
+          <ActiveLink href='/publicacoes' texto='Publicações' />
+          <ActiveLink href='/habilidades' texto='Habilidades' />
         </nav>
 
         <a
