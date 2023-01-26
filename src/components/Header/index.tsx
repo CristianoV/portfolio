@@ -19,13 +19,12 @@ export function Header() {
           <ActiveLink href='/habilidades' texto='Habilidades' />
         </nav>
 
-        <a
+        <Link
           className={styles.readyButton}
-          type='button'
           href='/contato'
         >
           Contato
-        </a>
+        </Link>
       </div>
     </header>
   );

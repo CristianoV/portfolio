@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { GetStaticProps } from 'next';
 import { createClient } from '../services/prismic';
 import { RichText } from 'prismic-dom';
+import Link from 'next/link';
 
 type Content = {
   title: string;
@@ -88,9 +89,9 @@ export default function Home({ content }: ContentProps) {
             Para mais informações
           </h2>
           <span>Você pode entrar em contato clicando nesse botão e enviando o seu email</span>
-          <a href='/contato'>
+          <Link href='/contato'>
             <button>Mande seu Email</button>
-          </a>
+          </Link>
         </div>
       </main>
     </>
