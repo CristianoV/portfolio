@@ -31,7 +31,7 @@ interface ContentProps {
 
 export default function Home({ content }: ContentProps) {
   console.log('teste');
-  console.log(process.env.VERCEL_URL)
+  console.log(process.env.NEXT_PUBLIC_EMAIL_HOST)
   console.log(process.env.NEXT_PUBLIC_VERCEL_URL)
   return (
     <>
