@@ -31,6 +31,9 @@ interface ContentProps {
 }
 
 export default function Home({ content }: ContentProps) {
+  console.log('teste');
+  console.log(process.env.VERCEL_URL)
+  console.log(process.env.TESTE)
   return (
     <>
       <Head>
