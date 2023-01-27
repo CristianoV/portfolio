@@ -5,11 +5,11 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 var transport = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
+  host: process.env.NEXT_PUBLIC_EMAIL_HOST,
   port: 2525,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: process.env.NEXT_PUBLIC_EMAIL_USER,
+    pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
   },
 });
 
