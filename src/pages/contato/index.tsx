@@ -2,11 +2,13 @@ import Head from 'next/head';
 import { FormEvent, useState } from 'react';
 import styles from './styles.module.scss';
 import { fetchFromApi } from '../../services/axios';
+import 'animate.css/animate.min.css';
 
 export default function Contato() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [enviado, setEnviado] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -20,6 +22,14 @@ export default function Contato() {
     setEmail('');
     setName('');
     setMessage('');
+    handleAlert();
+  };
+
+  const handleAlert = () => {
+    setEnviado(true);
+    setTimeout(() => {
+      setEnviado(false);
+    }, 3000);
   };
 
   return (
@@ -58,6 +68,14 @@ export default function Contato() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
+          {enviado && (
+            <div
+              className={`alert alert-success ${styles.message} ${styles.visible}`}
+              role='alert'
+            >
+              Enviado com sucesso!
+            </div>
+          )}
 
           <button type='submit'>Enviar</button>
         </form>
