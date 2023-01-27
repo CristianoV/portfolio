@@ -10,6 +10,7 @@ const nextConfig = {
     email_host: process.env.EMAIL_HOST,
     email_pass: process.env.EMAIL_PASS,
     email_user: process.env.EMAIL_USER,
+    vercel_url: process.env.VERCEL_URL
   },
 }
 
