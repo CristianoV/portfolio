@@ -29,13 +29,12 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       subject: name,
       text: message,
     };
-    await new Promise((resolve, reject) => {
-      transport.sendMail(mailOptions, (error) => {
-        if (error) res.status(500).json({ message: 'Erro ao enviar e-mail' });
-      });
-    });
-
-    res.status(200).json({ message: 'E-mail enviado com sucesso' });
+    try {
+      await transport.sendMail(mailOptions)
+      res.status(200).json({ message: 'E-mail enviado com sucesso' });
+    } catch (err) {
+      res.status(500).json({ message: 'Erro ao enviar e-mail' });
+    }
   } else {
     res.setHeader('Allow', 'POST');
     res.status(405).end('Method not allowed');
