@@ -2,6 +2,8 @@
 import Head from 'next/head';
 import styles from '../styles/home.module.scss';
 
+require('dotenv').config()
+
 import Image from 'next/image';
 
 import { GetStaticProps } from 'next';
