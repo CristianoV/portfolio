@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const site = `http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api` || 'http://localhost:3000/api'
+const site = process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'
 
 export const fetchFromApi = axios.create({
   baseURL: site,

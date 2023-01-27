@@ -11,7 +11,7 @@ export default function Contato() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    await fetchFromApi.post('/email', {
+    await fetchFromApi.post('/api/email', {
       name,
       email,
       message,

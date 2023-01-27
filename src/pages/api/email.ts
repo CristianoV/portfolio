@@ -10,7 +10,7 @@ const transport = nodemailer.createTransport({
   },
 });
 
-const sendEmail = (req: NextApiRequest, res: NextApiResponse) => {
+const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const { name, email, message } = req.body as {
       name: string;
@@ -30,11 +30,11 @@ const sendEmail = (req: NextApiRequest, res: NextApiResponse) => {
       text: message,
     };
 
-    transport.sendMail(mailOptions, (error) => {
+    await transport.sendMail(mailOptions, (error) => {
       if (error) res.status(500).json({ message: 'Erro ao enviar e-mail' });
     });
 
-    res.status(200).json({ message: 'E-mail enviado com sucesso', teste: process.env.NEXT_PUBLIC_EMAIL_USER, });
+    res.status(200).json({ message: 'E-mail enviado com sucesso' });
   } else {
     res.setHeader('Allow', 'POST');
     res.status(405).end('Method not allowed');
