@@ -1,10 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
-import * as dotenv from 'dotenv'
-dotenv.config()
-
-var transport = nodemailer.createTransport({
+const transport = nodemailer.createTransport({
   host: process.env.NEXT_PUBLIC_EMAIL_HOST,
   port: 2525,
   auth: {
@@ -37,7 +34,7 @@ const sendEmail = (req: NextApiRequest, res: NextApiResponse) => {
       if (error) res.status(500).json({ message: 'Erro ao enviar e-mail' });
     });
 
-    res.status(200).json({ message: 'E-mail enviado com sucesso' });
+    res.status(200).json({ message: 'E-mail enviado com sucesso', teste: process.env.NEXT_PUBLIC_EMAIL_USER, });
   } else {
     res.setHeader('Allow', 'POST');
     res.status(405).end('Method not allowed');
