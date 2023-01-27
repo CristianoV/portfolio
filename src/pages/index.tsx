@@ -30,6 +30,8 @@ interface ContentProps {
 }
 
 export default function Home({ content }: ContentProps) {
+  console.log(`http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`, 'http://localhost:3000/api');
+  
   return (
     <>
       <Head>
