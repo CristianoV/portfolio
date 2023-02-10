@@ -3,13 +3,13 @@
   margin-left: 80px;
   background-image: url('/cristianoPicture.svg');
   background-repeat: no-repeat;
-  background-position: 525px 40%;
-  background-size: 100vh;
+  background-position: 100% 40%;
+  background-size: 100vh 100vh;
   height: 100vh;
   max-width: 1440px;
   width: calc(100vw - 80px);
   div {
-    width: 80%;
+    width: 50%;
     margin-top: 120px;
     h1 {
       width: 345px;
@@ -57,14 +57,22 @@
   }
 }
 
+// @media (max-width: 1137px) {
+//   .container {
+//     background-image: url('/cristianoPicture.svg');
+//     margin: 0;
+//     width: 100vw;
+//     background-repeat: repeat;
+//     background-position: 110vh 0;
+//   }
+// }
 
-@media (max-width: 785px) {
-  .container {
-    background-image: url('/cristianoPicture.svg');
-    background-repeat: repeat;
-    background-position: 110vh 0;
-    background-size: 100vh;
-    margin: 0;
-    width: 100vw;
-  }
-}
+// @media (max-width: 785px) {
+//   .container {
+//     background-repeat: repeat;
+//     background-size: 150vh;
+//     margin-left: 0;
+//     height: 200%;
+//     width: 100%;
+//   }
+// }
