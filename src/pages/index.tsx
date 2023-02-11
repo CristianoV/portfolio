@@ -41,7 +41,12 @@ export default function Home() {
       </Head>
       <main className={styles.container}>
         <div>
-          <Image src={Logo} alt='Logo' />
+          <Image
+            src={Logo}
+            alt='Logo'
+            placeholder='blur'
+            blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN0vQgAAWEBGHsgcxcAAAAASUVORK5CYII='
+          />
           <h1>DESENVOLVEDOR FULL STACK</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. Venenatis urna quis morbi
@@ -52,11 +57,14 @@ export default function Home() {
             <Link href='/contato'>PUBLICAÇÕES</Link>
           </nav>
           <div>
-            <Link href='https://github.com/CristianoV'>
+            <Link href='https://github.com/CristianoV' target='_blank'>
               <BsGithub size={32} color='#3EFA52' />
               GitHub
             </Link>
-            <Link href='https://www.linkedin.com/in/cristianov/'>
+            <Link
+              href='https://www.linkedin.com/in/cristianov/'
+              target='_blank'
+            >
               <BsLinkedin size={32} color='#3EFA52' />
               LinkedIn
             </Link>
