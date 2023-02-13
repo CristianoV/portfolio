@@ -6,9 +6,11 @@ import Link from 'next/link';
 export function Header() {
   return (
     <header className={styles.container}>
-      <h1>
-        CristianoV<span>.</span>
-      </h1>
+      <Link href='/'>
+        <h1>
+          CristianoV<span>.</span>
+        </h1>
+      </Link>
 
       <nav>
         <ActiveLink href='/' texto='Início' />
