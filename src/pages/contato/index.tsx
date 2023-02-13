@@ -5,8 +5,9 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import 'animate.css/animate.min.css';
 import Link from 'next/link';
-import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { SiHackerrank } from 'react-icons/si';
+import { TiMail } from 'react-icons/ti';
 
 export default function Contato() {
   const [name, setName] = useState('');
@@ -117,11 +118,16 @@ export default function Contato() {
         <section>
           <h3>Contatos</h3>
           <h4>Celular:</h4>
-          <p>(51) 9 9734-0308</p>
+          <p>
+            <BsWhatsapp size={25} />
+            (51) 9 9734-0308
+          </p>
 
           <h4>Email:</h4>
-          <p>cristianoviieira@gmail.com</p>
-
+          <p>
+            <TiMail size={25} />
+            cristianoviieira@gmail.com
+          </p>
           <div>
             <Link href='https://github.com/CristianoV' target='_blank'>
               <BsGithub size={32} />
