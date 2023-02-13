@@ -13,6 +13,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    p {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     div {
       display: flex;
       gap: 10px;
