@@ -49,6 +49,11 @@ export default function Home() {
           />
           <h1>DESENVOLVEDOR FULL STACK</h1>
           <p>
+            {/* Sou um desenvolvedor web capacitado com habilidades avançadas em
+            Javascript, TypeScript, Python, React e experiência em
+            construção de aplicações web escaláveis e performáticas. Estou
+            sempre em busca de aprendizados e desafios para me tornar um
+            profissional ainda mais capacitado. */}
             Lorem ipsum dolor sit amet consectetur. Venenatis urna quis morbi
             viverra.
           </p>
@@ -74,6 +79,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <Image src={Cristiano} alt='CristianoV' />
       </main>
     </>
   );
