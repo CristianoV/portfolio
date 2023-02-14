@@ -90,12 +90,12 @@ export default function Publicacoes({
   return (
     <>
       <Head>
-        <title>Blog | Sujeito Programador</title>
+        <title>Publicações | CristianoV</title>
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
           {posts.map((post) => (
-            <Link key={post.slug} href={`/posts/${post.slug}`}>
+            <Link key={post.slug} href={`/publicacoes/${post.slug}`}>
               <Image
                 src={post.image}
                 alt={post.title}
