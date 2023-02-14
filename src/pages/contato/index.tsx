@@ -63,7 +63,7 @@ export default function Contato() {
   return (
     <>
       <Head>
-        <title>Contatos</title>
+        <title>Contatos | CristianoV</title>
       </Head>
       <div className={styles.container}>
         <form onSubmit={handleSubmit}>
@@ -118,10 +118,12 @@ export default function Contato() {
         <section>
           <h3>Contatos</h3>
           <h4>Celular:</h4>
-          <p>
-            <BsWhatsapp size={25} />
-            (51) 9 9734-0308
-          </p>
+          <Link href='https://wa.me/97340308' target='_blank'>
+            <p>
+              <BsWhatsapp size={25} />
+              (51) 9 9734-0308
+            </p>
+          </Link>
 
           <h4>Email:</h4>
           <p>
