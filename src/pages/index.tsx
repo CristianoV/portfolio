@@ -49,13 +49,8 @@ export default function Home() {
           />
           <h1>DESENVOLVEDOR FULL STACK</h1>
           <p>
-            {/* Sou um desenvolvedor web capacitado com habilidades avançadas em
-            Javascript, TypeScript, Python, React e experiência em
-            construção de aplicações web escaláveis e performáticas. Estou
-            sempre em busca de aprendizados e desafios para me tornar um
-            profissional ainda mais capacitado. */}
-            Lorem ipsum dolor sit amet consectetur. Venenatis urna quis morbi
-            viverra.
+            Iniciando minha carreira como Desenvolvedor, busco desafios que irão
+            me testar para que eu me torne um melhor profissional.
           </p>
           <nav>
             <Link href='/contato'>ME CONTRATE</Link>
@@ -63,19 +58,19 @@ export default function Home() {
           </nav>
           <div>
             <Link href='https://github.com/CristianoV' target='_blank'>
-              <BsGithub size={32} color='#3EFA52' />
+              <BsGithub size={32} />
               GitHub
             </Link>
             <Link
               href='https://www.linkedin.com/in/cristianov/'
               target='_blank'
             >
-              <BsLinkedin size={32} color='#3EFA52' />
+              <BsLinkedin size={32} />
               LinkedIn
             </Link>
             <a href='/files/CristianoVieira.pdf' download>
-              <FaFileDownload size={26} color='#3EFA52' />
-              Download Curriculo
+              <FaFileDownload size={32} />
+              Baixe meu currículo
             </a>
           </div>
         </div>
