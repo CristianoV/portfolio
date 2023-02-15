@@ -62,8 +62,6 @@ export default function Publicacoes({
     }
 
     const getPosts = response.results.map((post) => {
-      console.log('post', post);
-
       return {
         slug: String(post.uid),
         title: RichText.asText(post.data.title),
@@ -172,8 +170,6 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
       ),
     };
   });
-
-  console.log(posts);
 
   return {
     props: {
