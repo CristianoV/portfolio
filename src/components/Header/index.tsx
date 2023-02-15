@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 import { ActiveLink } from '../ActiveLink';
-import Logo from '../../../public/logoName2.svg';
+import Logo from '../../../public/logoSite.svg';
 import Link from 'next/link';
 import Image from 'next/image';
 
