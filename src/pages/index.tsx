@@ -10,7 +10,7 @@ import { createClient } from '../services/prismic';
 import { RichText } from 'prismic-dom';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import Link from 'next/link';
-import { FaFileDownload } from 'react-icons/fa';
+import { FiDownload } from 'react-icons/fi';
 
 // type Content = {
 //   title: string;
@@ -69,7 +69,7 @@ export default function Home() {
               LinkedIn
             </Link>
             <a href='/files/CristianoVieira.pdf' download>
-              <FaFileDownload size={32} />
+              <FiDownload size={21} />
               Baixe meu currículo
             </a>
           </div>
