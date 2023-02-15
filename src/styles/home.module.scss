@@ -2,10 +2,6 @@
   display: flex;
   align-items: center;
   margin-left: 80px;
-  // background-image: url('/cristianoPicture.svg');
-  // background-repeat: no-repeat;
-  // background-position: 100% 40%;
-  // background-size: 100vh 100vh;
   height: 100vh;
   max-width: 1440px;
   width: calc(100vw - 80px);
@@ -29,7 +25,7 @@
       border-radius: 500px;
       font-family: 'General Sans';
       font-style: normal;
-      font-weight: 800;
+      font-weight: 600;
       font-size: 14px;
       line-height: 100%;
       letter-spacing: 0.01em;
@@ -51,6 +47,7 @@
         background: var(--principal-color);
         box-shadow: 8px 8px 0px #ffffff;
         transition: all 0.4s ease-in-out;
+        font-weight: 700;
 
         &:hover {
           background: var(--Secondary);
