@@ -7,7 +7,7 @@
 :root {
   --principal-color: #8658f9;
   --Secondary: #3efa52;
-  --theme: #1e1e1e;
+  --theme: #13161A;
   --white: #fff;
 }
 
@@ -23,6 +23,11 @@
   }
 }
 
+@font-face {
+  font-family: General Sans;
+  src: url('../../fonts/GeneralSans-Variable.ttf') format('truetype');
+}
+
 body {
   background: linear-gradient(
     90deg,
@@ -31,6 +36,7 @@ body {
   );
   display: flex;
   justify-content: center;
+  font-family: General Sans;
 }
 
 // body,
