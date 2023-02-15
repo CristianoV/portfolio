@@ -1,9 +1,9 @@
 import styles from './styles.module.scss';
 
-export default function habilidades() {
+export default function sobre() {
   return (
     <div className={styles.container}>
-      <h1>habilidades</h1>
+      <h1>sobre</h1>
     </div>
   )
 }

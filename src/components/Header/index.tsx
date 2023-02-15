@@ -15,7 +15,7 @@ export function Header() {
       <nav>
         <ActiveLink href='/' texto='Início' />
         <ActiveLink href='/publicacoes' texto='Publicações' />
-        <ActiveLink href='/habilidades' texto='Habilidades' />
+        <ActiveLink href='/sobre' texto='Sobre' />
         <Link className={styles.readyButton} type='button' href='/contato'>
           <p>ME CONTRATE</p>
         </Link>
