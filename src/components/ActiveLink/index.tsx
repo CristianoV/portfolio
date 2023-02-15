@@ -11,7 +11,7 @@ export function ActiveLink({ href, texto }: ActiveLinkProps) {
   const { asPath } = useRouter();
 
   return (
-    <Link href={href} className={href === asPath ? styles.active : ''}>
+    <Link href={href} className={href === asPath ? styles.active : styles.container}>
       <p>{texto}</p>
       {href === asPath && <hr className={styles.activeHr} />}
     </Link>
