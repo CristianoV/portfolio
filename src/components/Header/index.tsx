@@ -1,15 +1,15 @@
 import styles from './styles.module.scss';
 
 import { ActiveLink } from '../ActiveLink';
+import Logo from '../../../public/logoName2.svg';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Header() {
   return (
     <header className={styles.container}>
       <Link href='/'>
-        <h1>
-          CristianoV<span>.</span>
-        </h1>
+        <Image src={Logo} alt='Logo' />
       </Link>
 
       <nav>
