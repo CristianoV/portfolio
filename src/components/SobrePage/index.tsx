@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 export default function SobrePage() {
   return (
-    <section className={styles.containerSobre}>
+    <section id="sobre" className={styles.containerSobre}>
       <Image src={Sorriso} alt='Logo' />
       <div>
         <div className={styles.sobre}>
