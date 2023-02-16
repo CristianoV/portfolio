@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/home.module.scss';
 import InitialPage from '../components/InitialPage';
 import SobrePage from '../components/SobrePage';
+import SkillsPage from '../components/SkillsPage';
 import { GetStaticProps } from 'next';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <div className={styles.background}>
         <InitialPage />
         <SobrePage />
+        <SkillsPage />
       </div>
     </>
   );
