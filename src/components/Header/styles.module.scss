@@ -1,5 +1,6 @@
 .container {
   max-width: 1440px;
+  max-height: 1080px;
   width: calc(100vw - 160px);
   margin: 40px 80px;
   display: flex;
@@ -44,4 +45,9 @@
       box-shadow: 8px 8px 0px #ffffff;
     }
   }
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: center;
 }

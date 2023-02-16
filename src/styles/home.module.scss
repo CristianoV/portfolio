@@ -4,6 +4,7 @@
   margin-left: 80px;
   height: 100vh;
   max-width: 1440px;
+  max-height: 1080px;
   width: calc(100vw - 80px);
   img {
     width: 40%;
@@ -105,22 +106,62 @@
   }
 }
 
-// @media (max-width: 1137px) {
-//   .container {
-//     background-image: url('/cristianoPicture.svg');
-//     margin: 0;
-//     width: 100vw;
-//     background-repeat: repeat;
-//     background-position: 110vh 0;
-//   }
-// }
+.sobre {
+  background: #22272d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  width: 400px;
+  height: 120px;
+  right: 304px;
+  margin-bottom: 32px;
+}
 
-// @media (max-width: 785px) {
-//   .container {
-//     background-repeat: repeat;
-//     background-size: 150vh;
-//     margin-left: 0;
-//     height: 200%;
-//     width: 100%;
-//   }
-// }
+.containerSobre {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 80px;
+  max-width: 1440px;
+  h1 {
+    color: var(--white);
+  }
+  div {
+    color: var(--white);
+    margin-left: 69px;
+  }
+  img {
+    background-color: var(--principal-color);
+  }
+
+  a {
+    color: var(--white);
+    padding: 10px 24px;
+    background: var(--principal-color);
+    box-shadow: 8px 8px 0px #ffffff;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+
+    &:hover {
+      background: var(--Secondary);
+      color: black;
+      box-shadow: 8px 8px 0px var(--principal-color);
+    }
+  }
+}
+
+.background {
+  background: linear-gradient(
+    90deg,
+    var(--theme) 50%,
+    var(--principal-color) 50%
+  );
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

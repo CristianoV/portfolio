@@ -42,23 +42,11 @@
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    var(--theme) 56%,
-    var(--principal-color) 56%
-  );
+  background: var(--theme);
   display: flex;
   justify-content: center;
   font-family: General Sans;
 }
-
-// body,
-// input,
-// textarea,
-// select,
-// button {
-//   font: 400 1rem 'Poppins', sans-serif;
-// }
 
 button {
   cursor: pointer;
