@@ -16,16 +16,16 @@ export default function SkillsPage() {
     <div className={styles.container}>
       <h1>Linguagens e tecnologias que domino</h1>
       <div className={styles.cards}>
-        <Card img={javascript} level={8} />
-        <Card img={typescript} level={7} />
-        <Card img={python} level={6} />
-        <Card img={nodejs} level={9} />
-        <Card img={react} level={8} />
-        <Card img={next} level={8} />
-        <Card img={redux} level={8} />
-        <Card img={git} level={8} />
-        <Card img={express} level={7} />
-        <Card img={bootstrap} level={6} />
+        <Card img={javascript} level={8} text='JavaScript' />
+        <Card img={typescript} level={7} text='TypeScript' />
+        <Card img={python} level={6} text='Python' />
+        <Card img={nodejs} level={9} text='Node.js' />
+        <Card img={react} level={8} text='React' />
+        <Card img={next} level={8} text='Next' />
+        <Card img={redux} level={8} text='Redux' />
+        <Card img={git} level={8} text='Git' />
+        <Card img={express} level={7} text='Express' />
+        <Card img={bootstrap} level={6} text='Bootstrap' />
       </div>
     </div>
   );

@@ -8,9 +8,11 @@ type DivStyle = {
 export default function Card({
   level,
   img,
+  text,
 }: {
   level: number;
   img: StaticImageData;
+  text: string;
 }) {
   const divStyle: DivStyle = {
     6: styles.level6,
@@ -25,7 +27,7 @@ export default function Card({
       <div className={divStyle[level]}>
         <div></div>
       </div>
-      <h1>NodeJS</h1>
+      <h1>{text}</h1>
     </div>
   );
 }
