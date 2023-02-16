@@ -14,7 +14,7 @@ import Card from './Card';
 export default function SkillsPage() {
   return (
     <div className={styles.container}>
-      <h1>Linguagens e tecnologias que domino</h1>
+      <h1 className={styles.title}>Linguagens e tecnologias que domino</h1>
       <div className={styles.cards}>
         <Card img={javascript} level={8} text='JavaScript' />
         <Card img={typescript} level={7} text='TypeScript' />
