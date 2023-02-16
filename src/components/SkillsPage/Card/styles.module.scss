@@ -1,6 +1,54 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #3b454f;
   border-radius: 16px;
-  width: 224px;
+  width: 194px;
   height: 192px;
+  img {
+    margin-bottom: 29px;
+  }
+  div {
+    width: 100px;
+    height: 8px;
+    background: #737d86;
+    border-radius: 500px;
+    div {
+      background: #1ecb4f;
+      border-radius: 500px;
+      height: 8px;
+    }
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 16px;
+  }
+}
+
+.level9 {
+  div {
+    width: 90px;
+  }
+}
+
+.level8 {
+  div {
+    width: 80px;
+  }
+}
+
+.level7 {
+  div {
+    width: 70px;
+  }
+}
+
+.level6 {
+  div {
+    width: 60px;
+  }
 }
