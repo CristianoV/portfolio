@@ -43,9 +43,12 @@
 
 body {
   background: var(--theme);
+  // width: calc(100vw - 30px);
+  width: 100vw;
   display: flex;
   justify-content: center;
   font-family: General Sans;
+  overflow-x: hidden;
 }
 
 button {
