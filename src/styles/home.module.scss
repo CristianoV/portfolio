@@ -1,28 +1,34 @@
 .background {
-  width: 100vw;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 
 .backgroundColorInitialPage {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   background: linear-gradient(
     90deg,
     var(--theme) 50%,
     var(--principal-color) 50%
   );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .backgroundColorSkillsPage {
+  align-items: center;
+  background-color: #22272D;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #22272D;
   margin-top: 128px;
 }
+
+// @media screen and (max-width: 768px) {
+//   .background {
+//     width: 100%;
+//   }
+// }

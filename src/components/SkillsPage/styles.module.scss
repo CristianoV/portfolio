@@ -27,3 +27,10 @@
   gap: 32px;
   margin: 85px;
 }
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin: 0;
+    gap: 16px;
+  }
+}

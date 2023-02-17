@@ -49,6 +49,7 @@
       font-weight: 500;
       margin-bottom: 64px;
     }
+    z-index: 999;
     nav {
       display: flex;
       gap: 24px;
@@ -107,6 +108,38 @@
           svg {
             color: black;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    margin: 80px 0 0 0;
+    div {
+      div {
+        display: flex;
+        flex-direction: column;
+        a {
+          width: 100%;
+          padding: 10px 24px;
+          font-size: 14px;
+          border: 1px solid #3b454f;
+          border-radius: 16px;
+          svg {
+            display: none;
+          }
+        }
+      }
+      nav {
+        flex-direction: column;
+        gap: 16px;
+        a {
+          width: 100%;
+          padding: 10px 24px;
+          font-size: 14px;
         }
       }
     }
