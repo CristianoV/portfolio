@@ -5,3 +5,24 @@
   align-items: center;
   justify-content: center;
 }
+
+.backgroundColorInitialPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    var(--theme) 50%,
+    var(--principal-color) 50%
+  );
+}
+
+.backgroundColorSkillsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22272D;
+  margin-top: 128px;
+}
