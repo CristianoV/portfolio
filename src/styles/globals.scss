@@ -23,6 +23,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 @font-face {
   font-family: General Sans;
   src: url('../../fonts/GeneralSans-Variable.ttf') format('truetype');
@@ -43,7 +49,6 @@
 
 body {
   background: var(--theme);
-  // width: 100vw;
   display: flex;
   justify-content: center;
   font-family: General Sans;
