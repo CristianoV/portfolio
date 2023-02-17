@@ -9,11 +9,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portifolio CristianoV</title>
+        <title>Portfolio CristianoV</title>
       </Head>
-      <div className={styles.background}>
+      <div className={styles.backgroundColorInitialPage}>
         <InitialPage />
+      </div>
+      <div className={styles.background}>
         <SobrePage />
+      </div>
+      <div className={styles.backgroundColorSkillsPage}>
         <SkillsPage />
       </div>
     </>
