@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    color: var(--white);
     p {
       margin-bottom: 10px;
       font-size: 1.2rem;
@@ -105,5 +106,15 @@
   }
   &.hidden {
     animation: fadeOut 1s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-top: 160px;
+    section {
+      margin-bottom: 0;
+    }
   }
 }
