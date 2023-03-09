@@ -4,6 +4,7 @@ import InitialPage from '../components/InitialPage';
 import SobrePage from '../components/SobrePage';
 import SkillsPage from '../components/SkillsPage';
 import { GetStaticProps } from 'next';
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div className={styles.backgroundColorSkillsPage}>
         <SkillsPage />
+      </div>
+      <div className={styles.background}>
+        <Contact />
       </div>
     </>
   );
