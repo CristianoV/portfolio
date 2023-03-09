@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
+  a {
+    opacity: 0;
+    animation: slidRight 1s ease forwards;
+  }
   h1 {
     color: var(--white);
     span {
@@ -23,6 +27,14 @@
     line-height: 100%;
     letter-spacing: 0.01em;
     gap: 21px;
+
+    a {
+      display: inline-block;
+      transition: .3s;
+      opacity: 0;
+      animation: slidTop .5s ease forwards;
+      animation-delay: calc(0.2s * var(--i));
+    }
   }
 }
 
@@ -60,5 +72,27 @@
   }
   .readyButton {
     display: none;
+  }
+}
+
+@keyframes slidRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
