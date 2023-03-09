@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import styles from './styles.module.scss';
 
 import { ActiveLink } from '../ActiveLink';
@@ -7,7 +8,7 @@ import Image from 'next/image';
 
 export function Header() {
   return (
-    <div className={styles.containerHeader}>
+    <div className={styles.containerHeader} id="header">
       <header className={styles.container}>
         <Link href='/'>
           <Image src={Logo} alt='Logo' />
@@ -17,9 +18,9 @@ export function Header() {
           <ActiveLink href='/' texto='Início' />
           <ActiveLink href='/publicacoes' texto='Publicações' />
           <ActiveLink href='/#sobre' texto='Sobre' />
-          <Link className={styles.readyButton} type='button' href='/contato'>
+          <a className={styles.readyButton} type='button' href='/#Contact'>
             <p>ME CONTRATE</p>
-          </Link>
+          </a>
         </nav>
       </header>
     </div>
