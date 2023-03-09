@@ -17,7 +17,7 @@ export default function InitialPage() {
           me testar para que eu me torne um melhor profissional.
         </p>
         <nav>
-          <Link href='/contato'>ME CONTRATE</Link>
+          <a href='/#Contact'>ME CONTRATE</a>
           <Link href='/contato'>PUBLICAÇÕES</Link>
         </nav>
         <div>
