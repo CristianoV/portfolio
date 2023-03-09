@@ -6,15 +6,21 @@ import styles from './styles.module.scss';
 interface ActiveLinkProps extends LinkProps {
   texto: string;
   href: string;
+  number?: number;
 }
 
-export function ActiveLink({ href, texto }: ActiveLinkProps) {
+interface CustomStyle extends React.CSSProperties {
+  '--i': number;
+}
+
+export function ActiveLink({ href, texto, number }: ActiveLinkProps) {
   const { asPath } = useRouter();
 
   if (texto === 'Sobre') {
     return (
       <a
         href='/#sobre'
+        style={{ '--i': number } as CustomStyle}
         className={href === asPath ? styles.active : styles.container}
       >
         <p>Sobre</p>
@@ -25,6 +31,7 @@ export function ActiveLink({ href, texto }: ActiveLinkProps) {
   return (
     <Link
       href={href}
+      style={{ '--i': number } as CustomStyle}
       className={href === asPath ? styles.active : styles.container}
     >
       <p>{texto}</p>
