@@ -16,3 +16,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    section {
+      width: 100%;
+      div {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: start;
+      }
+    }
+  }
+}
