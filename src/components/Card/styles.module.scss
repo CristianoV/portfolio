@@ -18,10 +18,20 @@
     align-items: start;
     padding: 24px;
 
+    h1 {
+      font-family: 'General Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 16px;
+    }
+
     p {
       overflow: hidden;
       text-overflow: clip;
       height: 120px;
+      text-align: start;
   }
 
     button {

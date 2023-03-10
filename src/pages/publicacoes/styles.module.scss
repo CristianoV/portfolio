@@ -1,91 +1,40 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: calc(100vw - 2rem);
-  background-color: #f5f5f5;
   max-width: 1440px;
-  margin-top: 120px;
+  width: 100vw;
+  margin: 120px auto;
+  padding: 0 2rem;
 }
 
-// .container{
-//   max-width: 1120px;
-//   margin: 0 auto;
-//   padding: 0 2rem;
-// }
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--white);
+}
 
-.posts{
-  max-width: 720px;
+.buttonNavigate {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 
-  a{
-    display: block;
+  div {
+    display: flex;
+    flex-direction: row;
+  }
 
-    & + a{
-      margin-top: 2rem;
-      padding-top: 2rem;
-    }
+  button {
+    margin: 0 5px;
+    border: 0;
+    background: var(--blue-900);
+    color: var(--white);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
 
-    time{
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      color: var(--gray-200);
-    }
-
-    img{
-      max-width: 100%;
-      max-height: 410px;
-      border: 2px solid var(--blue-900);
-      border-radius: 6px;
-      border-image: linear-gradient(95deg, #31b4d0, transparent) 1;
-      object-fit: cover;
-    }
-
-    strong{
-      display: block;
-      font-size: 1.5rem;
-      margin: 1rem 0;
-      line-height: 2rem;
-      transition: color 0.3s;
-    }
-
-    p{
-      margin-top: 0.5rem;
-      line-height: 1.62rem;
-    }
-
-    &:hover strong{
-      color: var(--principal-color)
+    svg {
+      padding: 0 3px;
     }
   }
 }
-
-// .buttonNavigate{
-//   margin-top: 2rem;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: row;
-//   justify-content: space-between;
-
-//   div{
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//   button{
-//     margin: 0 5px;
-//     border: 0;
-//     background: var(--blue-900);
-//     color: var(--white);
-//     display: flex;
-//     padding: 0.5rem;
-//     border-radius: 5px;
-
-//     svg{
-//       padding: 0 3px;
-//     }
-//   }
-
-// }
