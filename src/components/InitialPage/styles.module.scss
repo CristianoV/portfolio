@@ -13,16 +13,15 @@
   }
   div {
     width: 55%;
-    margin-top: 64px;
     img {
       max-width: 498px;
       max-height: 160px;
       width: 70%;
       height: 100%;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
       opacity: 0;
       animation: slidLeft 1s ease forwards;
-      animation-delay: .6s;
+      animation-delay: 0.6s;
     }
     h1 {
       width: 262px;
@@ -40,7 +39,7 @@
       padding: 10px 0px;
       opacity: 0;
       animation: slidRight 1s ease forwards;
-      animation-delay: .6s;
+      animation-delay: 0.6s;
     }
     p {
       color: var(--white);
@@ -49,12 +48,15 @@
       margin-bottom: 64px;
       opacity: 0;
       animation: slidTop 1s ease forwards;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
     }
     z-index: 999;
     nav {
       display: flex;
       gap: 24px;
+      opacity: 0;
+      animation: slidTop 1s ease forwards;
+      animation-delay: 0.2s;
       a {
         color: var(--white);
         padding: 10px 24px;
@@ -83,6 +85,9 @@
     div {
       display: flex;
       gap: 16px;
+      opacity: 0;
+      animation: slidTop 1s ease forwards;
+      animation-delay: 0.2s;
       a {
         display: flex;
         align-items: center;
@@ -110,39 +115,6 @@
           svg {
             color: black;
           }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100vw;
-    margin: 80px 0 0 0;
-    div {
-      div {
-        display: flex;
-        flex-direction: column;
-        a {
-          width: 100%;
-          padding: 10px 24px;
-          font-size: 14px;
-          border: 1px solid #3b454f;
-          border-radius: 16px;
-          margin-left: 16px;
-          svg {
-            display: none;
-          }
-        }
-      }
-      nav {
-        flex-direction: column;
-        gap: 16px;
-        a {
-          width: 100%;
-          padding: 10px 24px;
-          font-size: 14px;
         }
       }
     }
@@ -179,5 +151,34 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100vw;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0px 0px 16px 16px;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 24px;
+
+      p {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
   }
 }

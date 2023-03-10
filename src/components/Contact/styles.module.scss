@@ -191,7 +191,15 @@
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
-    margin-top: 160px;
-    gap: 40px;
+    margin: 0px;
+    gap: 0;
+    width: 100%;
+    align-items: center;
+
+    img {
+      width: 274px;
+      height: 274px;
+      margin-top: 64px;
+    }
   }
 }

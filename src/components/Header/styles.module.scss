@@ -64,17 +64,6 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    margin-top: 15px;
-    gap: 20px;
-  }
-  .readyButton {
-    display: none;
-  }
-}
-
 @keyframes slidRight {
   0% {
     transform: translateX(-100px);
@@ -94,5 +83,24 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      img {
+        width: 120px;
+        height: 20px;
+      }
+    }
+
+    nav > *:not(:last-child) {
+      display: none;
+    }
   }
 }

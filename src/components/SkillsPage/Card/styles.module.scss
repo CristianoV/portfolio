@@ -5,7 +5,8 @@
   justify-content: center;
   border: 1px solid #3b454f;
   border-radius: 16px;
-  width: 194px;
+  width: calc(100% / 5 - 32px);
+  min-width: 150px;
   height: 192px;
   img {
     margin-bottom: 29px;

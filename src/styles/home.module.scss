@@ -26,3 +26,9 @@
   justify-content: center;
   margin-top: 128px;
 }
+
+@media screen and (max-width: 768px) {
+  .backgroundColorInitialPage {
+    background: var(--theme)
+  }
+}
