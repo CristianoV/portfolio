@@ -1,9 +1,7 @@
 import Head from 'next/head';
 
 import styles from './styles.module.scss';
-import Link from 'next/link';
-
-import Image from 'next/image';
+import Card from '../../components/Card';
 import { GetStaticProps } from 'next';
 import { createClient } from '../../services/prismic';
 import { RichText } from 'prismic-dom';
@@ -92,23 +90,16 @@ export default function Publicacoes({
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/publicacoes/${post.slug}`}>
-              <Image
-                src={post.image}
-                alt={post.title}
-                key={post.slug}
-                width={720}
-                height={410}
-                quality={100}
-                placeholder='blur'
-                blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN0vQgAAWEBGHsgcxcAAAAASUVORK5CYII='
-              />
-              <strong>{post.title}</strong>
-              <time>{post.updatedAt}</time>
-              <p>{post.description}</p>
-            </Link>
+        {posts.map((post) => (
+            <Card
+              key={post.slug}
+              title={post.title}
+              image={post.image}
+              description={post.description}
+              slug={post.slug}
+            />
           ))}
+          </div>
 
           <div className={styles.buttonNavigate}>
             {Number(currentPage) >= 2 && (
@@ -132,7 +123,6 @@ export default function Publicacoes({
                 </button>
               </div>
             )}
-          </div>
         </div>
       </main>
     </>
