@@ -90,7 +90,7 @@ export default function Publicacoes({
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
-        {posts.map((post) => (
+          {posts.map((post) => (
             <Card
               key={post.slug}
               title={post.title}
@@ -99,30 +99,37 @@ export default function Publicacoes({
               slug={post.slug}
             />
           ))}
+        </div>
+
+        <div className={styles.buttonNavigate}>
+          <div>
+            <button
+              disabled={Number(currentPage) === 1}
+              onClick={() => navigatePage(1)}
+            >
+              <FiChevronsLeft size={25} color='#FFF' />
+            </button>
+            <button
+              disabled={Number(currentPage) === 1}
+              onClick={() => navigatePage(Number(currentPage - 1))}
+            >
+              <FiChevronLeft size={25} color='#FFF' />
+            </button>
           </div>
-
-          <div className={styles.buttonNavigate}>
-            {Number(currentPage) >= 2 && (
-              <div>
-                <button onClick={() => navigatePage(1)}>
-                  <FiChevronsLeft size={25} color='#FFF' />
-                </button>
-                <button onClick={() => navigatePage(Number(currentPage - 1))}>
-                  <FiChevronLeft size={25} color='#FFF' />
-                </button>
-              </div>
-            )}
-
-            {Number(currentPage) < Number(totalPage) && (
-              <div>
-                <button onClick={() => navigatePage(Number(currentPage + 1))}>
-                  <FiChevronRight size={25} color='#FFF' />
-                </button>
-                <button onClick={() => navigatePage(Number(totalPage))}>
-                  <FiChevronsRight size={25} color='#FFF' />
-                </button>
-              </div>
-            )}
+          <div>
+            <button
+              disabled={Number(currentPage) >= Number(totalPage)}
+              onClick={() => navigatePage(Number(currentPage + 1))}
+            >
+              <FiChevronRight size={25} color='#FFF' />
+            </button>
+            <button
+              disabled={Number(currentPage) >= Number(totalPage)}
+              onClick={() => navigatePage(Number(totalPage))}
+            >
+              <FiChevronsRight size={25} color='#FFF' />
+            </button>
+          </div>
         </div>
       </main>
     </>

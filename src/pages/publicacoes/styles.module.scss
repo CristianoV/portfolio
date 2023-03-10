@@ -2,7 +2,7 @@
   max-width: 1440px;
   width: 100vw;
   margin: 120px auto;
-  padding: 0 2rem;
+  padding: 0 80px;
 }
 
 .posts {
@@ -22,19 +22,33 @@
   div {
     display: flex;
     flex-direction: row;
-  }
 
-  button {
-    margin: 0 5px;
-    border: 0;
-    background: var(--blue-900);
-    color: var(--white);
-    display: flex;
-    padding: 0.5rem;
-    border-radius: 5px;
+    button {
+      margin: 0 5px;
+      border: 0;
+      color: var(--white);
+      background: var(--principal-color);
+      display: flex;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: 0.3s;
 
-    svg {
-      padding: 0 3px;
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      svg {
+        padding: 0 3px;
+      }
     }
   }
 }
