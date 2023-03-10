@@ -19,7 +19,7 @@ export default function InitialPage() {
         </p>
         <nav>
           <a href='/#Contact'>ME CONTRATE</a>
-          <Link href='/contato'>PUBLICAÇÕES</Link>
+          <Link href='/publicacoes'>PUBLICAÇÕES</Link>
         </nav>
         <div>
           <Link href='https://github.com/CristianoV' target='_blank'>
