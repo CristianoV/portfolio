@@ -88,6 +88,7 @@
       display: flex;
       gap: 16px;
       opacity: 0;
+      width: auto;
       animation: slidTop 1s ease forwards;
       animation-delay: 0.2s;
       a {
