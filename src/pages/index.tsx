@@ -13,6 +13,7 @@ import * as prismic from '@prismicio/client';
 type Post = {
   slug: string;
   title: string;
+  subTitle: string;
   image: string;
   description: string;
   updatedAt: string;
@@ -55,11 +56,16 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData });
 
   const response = await client.query(
-    prismic.predicate.at('document.type', 'post'),
+    prismic.predicate.at('document.type', 'project'),
     {
       pageSize: 6,
-      fetch: ['post.title', 'post.description', 'post.image'],
-      orderings: ['my.post.date desc'],
+      fetch: [
+        'project.title',
+        'project.position',
+        'project.description',
+        'project.image',
+        'project.subtitle',
+      ],
     }
   );
 
@@ -67,6 +73,8 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
     return {
       slug: post.uid,
       title: RichText.asText(post.data.title),
+      position: Number(post.data.position),
+      subTitle: RichText.asText(post.data.subtitle),
       description:
         post.data.description.find(
           (content: { type: string }) => content.type === 'paragraph'
@@ -81,6 +89,16 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
         }
       ),
     };
+  });
+
+  posts.sort((a, b) => {
+    if (a.position > b.position) {
+      return 1;
+    }
+    if (a.position < b.position) {
+      return -1;
+    }
+    return 0;
   });
 
   return {
