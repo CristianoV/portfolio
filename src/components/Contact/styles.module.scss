@@ -16,6 +16,11 @@
     margin-bottom: 20px;
     align-self: flex-start;
     color: var(--white);
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
   }
 
   p {
@@ -195,6 +200,11 @@
     gap: 0;
     width: 100%;
     align-items: center;
+
+    h1 {
+      font-size: 32px;
+      margin: 16px 0 32px 0;
+    }
 
     img {
       width: 274px;
