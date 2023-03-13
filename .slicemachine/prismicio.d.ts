@@ -243,6 +243,17 @@ interface ProjectDocumentData {
      *
      */
     description: prismicT.RichTextField;
+    /**
+     * position field in *Project*
+     *
+     * - **Field Type**: Number
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.position
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     *
+     */
+    position: prismicT.NumberField;
 }
 /**
  * Project document from Prismic
