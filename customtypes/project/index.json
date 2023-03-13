@@ -1,6 +1,6 @@
 {
-  "id": "post",
-  "label": "Post",
+  "id": "project",
+  "label": "Project",
   "repeatable": true,
   "status": true,
   "json": {
@@ -19,6 +19,15 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "single": "heading1"
+        }
+      },
+      "subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "subTitle",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
         }
       },
       "image": {
