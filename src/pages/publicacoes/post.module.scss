@@ -16,6 +16,15 @@
   margin: auto;
   margin-top: 120px;
 
+  a {
+    color: var(--principal-color);
+    transition: 0.3s;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
   img {
     max-width: 848px;
     min-width: 345px;
