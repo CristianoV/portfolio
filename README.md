@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+Portfolio
+</h1>
 
-## Getting Started
+## :books: Descrição
+Sou desenvolvedor Full-stack com habilidades em Javascript, TypeScript e Python. Utilizo as tecnologias Node.js, Express.js e Nextjs para construir aplicações web escaláveis e performáticas. Tenho experiência com banco de dados MongoDB e SQL e com os frameworks de teste Jest, Mocha e Chai. Também possuo conhecimento avançado em React (Classes/Hooks/Redux/ContextAPI), HTML5 e CSS 3 (Bootstrap e tailwindcss). 
+Estou sempre em busca de desafios e aprendizados constantes para me tornar um profissional cada vez mais capacitado.
 
-First, run the development server:
+## :man_technologist: Tecnologias, bibliotecas e arquiteturas utilizadas no portfolio
+  * __React__
+  * __Next__
+  * __axios__
+  * __Typescript__
+  * __Sass__
+  * __prismic__  
+  * __Emailjs__ 
 
-```bash
-npm run dev
-# or
-yarn dev
+## 	:raising_hand_man: Quem sou eu
+Meu nome é Cristiano Vieira e sou um jovem gaúcho de 26 anos. Adoro tecnologia e desde os meus 15 anos tenho interesse por programação. No final de 2021, decidi que era hora de investir na minha carreira e comecei a estudar programação com mais afinco.
+
+Fora do trabalho, tenho diversos hobbies. Adoro ir ao cinema, jogar video game e atirar com arco e flecha. Tenho um cachorro chamado Floki que tem 4 anos de idade e que é minha companhia nos momentos de lazer.
+
+No geral, sou alguém que adora aprender coisas novas e desafios. Estou animado para ver onde a minha carreira de programador me levará e quais projetos emocionantes terei a oportunidade de trabalhar no futuro.
+
+
+# Instruções da aplicação
+
+### Iniciar Projeto
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+cd portfolio
+npm i
+npm run build
+npm run start
+```
