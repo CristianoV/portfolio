@@ -11,7 +11,7 @@ export default function InitialPage() {
   return (
     <main className={styles.container}>
       <div>
-        <Image src={Logo} alt='Logo' />
+        <Image src={Logo} alt='Logo' quality={50} />
         <h1>DESENVOLVEDOR FULL STACK</h1>
         <p>
           Iniciando minha carreira como Desenvolvedor, busco desafios que irão
@@ -36,7 +36,7 @@ export default function InitialPage() {
           </a>
         </div>
       </div>
-      <Image src={Cristiano} alt='CristianoV' />
+      <Image src={Cristiano} alt='CristianoV' quality={50} />
     </main>
   );
 }
