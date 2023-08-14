@@ -3,15 +3,10 @@
   "label": "Project",
   "repeatable": true,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
-      "uid": {
-        "type": "UID",
-        "config": {
-          "label": "id",
-          "placeholder": ""
-        }
-      },
+      "uid": { "type": "UID", "config": { "label": "id", "placeholder": "" } },
       "title": {
         "type": "StructuredText",
         "config": {
@@ -32,11 +27,7 @@
       },
       "image": {
         "type": "Image",
-        "config": {
-          "label": "image",
-          "constraint": {},
-          "thumbnails": []
-        }
+        "config": { "label": "image", "constraint": {}, "thumbnails": [] }
       },
       "description": {
         "type": "StructuredText",
@@ -49,10 +40,19 @@
       },
       "position": {
         "type": "Number",
+        "config": { "label": "position", "placeholder": "" }
+      },
+      "link_repository": {
+        "type": "Link",
         "config": {
-          "label": "position",
-          "placeholder": ""
+          "label": "link_repository",
+          "placeholder": "",
+          "select": null
         }
+      },
+      "link_preview": {
+        "type": "Link",
+        "config": { "label": "link_preview", "placeholder": "", "select": null }
       }
     }
   }

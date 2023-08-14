@@ -3,15 +3,10 @@
   "label": "Post",
   "repeatable": true,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
-      "uid": {
-        "type": "UID",
-        "config": {
-          "label": "id",
-          "placeholder": ""
-        }
-      },
+      "uid": { "type": "UID", "config": { "label": "id", "placeholder": "" } },
       "title": {
         "type": "StructuredText",
         "config": {
@@ -23,11 +18,7 @@
       },
       "image": {
         "type": "Image",
-        "config": {
-          "label": "image",
-          "constraint": {},
-          "thumbnails": []
-        }
+        "config": { "label": "image", "constraint": {}, "thumbnails": [] }
       },
       "description": {
         "type": "StructuredText",
@@ -37,6 +28,18 @@
           "allowTargetBlank": true,
           "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
+      },
+      "link_repository": {
+        "type": "Link",
+        "config": {
+          "label": "link_repository",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "link_preview": {
+        "type": "Link",
+        "config": { "label": "link_preview", "placeholder": "", "select": null }
       }
     }
   }

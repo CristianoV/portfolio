@@ -1,7 +1,4 @@
 {
-  "apiEndpoint": "https://portifoliocristiano.prismic.io/api/v2",
-  "libraries": [
-    "@/slices"
-  ],
-  "_latest": "0.6.1"
+	"//": "sm.json is deprecated, if you were importing values from this file please now import them from slicemachine.config.json, else you can safely delete this file",
+	"apiEndpoint": "https://portifoliocristiano.prismic.io/api/v2"
 }
