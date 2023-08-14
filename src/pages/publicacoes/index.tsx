@@ -28,6 +28,33 @@ interface PostsProps {
   totalPage: string;
 }
 
+  interface Response {
+    results: {
+      uid: string;
+      last_publication_date: string;
+      data: {
+        title: string;
+        position: string;
+        subtitle: string;
+        description: {
+          type: string;
+          text: string;
+        }[];
+        image: {
+          url: string;
+        };
+        link_repository: {
+          url: string;
+        };
+        link_preview: {
+          url: string;
+        };
+      };
+    }[];
+    page: string;
+    total_pages: string;
+  }
+
 export default function Publicacoes({
   posts: postsBlog,
   page,
@@ -53,7 +80,7 @@ export default function Publicacoes({
   }
 
   async function navigatePage(pageNumber: number) {
-    const response = await reqPost(pageNumber);
+    const response = await reqPost(pageNumber) as unknown as Response;
 
     if (response.results.length === 0) {
       return;
@@ -146,7 +173,7 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
       fetch: ['post.title', 'post.description', 'post.image'],
       orderings: ['my.post.date desc'],
     }
-  );
+  ) as unknown as Response;
 
   const posts = response.results.map((post) => {
     return {

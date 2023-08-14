@@ -6,7 +6,16 @@
   margin: 16px;
   display: flex;
   flex-direction: column;
-  
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+      width: 100%;
+    }
+  }
 
   img {
     width: 100%;
@@ -18,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 24px;
+    padding: 24px 16px;
 
     h1 {
       font-family: 'General Sans';
@@ -34,13 +43,10 @@
       text-overflow: clip;
       height: 120px;
       text-align: start;
-  }
+    }
 
     button {
-      color: var(--white);
-      background: var(--principal-color);
       padding: 10px 24px;
-      box-shadow: 8px 8px 0px var(--white);
       font-family: 'General Sans';
       font-style: normal;
       font-weight: 700;
@@ -48,13 +54,31 @@
       line-height: 100%;
       transition: all 0.3s ease-in-out;
       border: none;
+      width: 100%;
       height: 56px;
-  
-      &:hover {
-        background: var(--Secondary);
-        color: black;
-        box-shadow: 8px 8px 0px var(--principal-color);
-      }
     }
+  }
+}
+
+.button_more {
+  color: var(--white);
+  background: var(--principal-color);
+  box-shadow: 8px 8px 0px var(--white);
+  &:hover {
+    background-color: var(--Secondary);
+    color: black;
+    box-shadow: 8px 8px 0px var(--principal-color);
+  }
+}
+
+.button_deploy {
+  background: #22272d;
+  box-shadow: 8px 8px 0px var(--white);
+  color: var(--white);
+
+  &:hover {
+    color: black;
+    background: var(--white);
+    box-shadow: 8px 8px 0px var(--principal-color);
   }
 }

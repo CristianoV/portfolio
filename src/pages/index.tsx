@@ -17,6 +17,8 @@ type Post = {
   image: string;
   description: string;
   updatedAt: string;
+  link_repository?: string;
+  link_preview?: string;
 };
 
 interface PostsProps {
@@ -55,7 +57,34 @@ export default function Home({
 export const getStaticProps: GetStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData });
 
-  const response = await client.query(
+  interface Response {
+    results: {
+      uid: string;
+      last_publication_date: string;
+      data: {
+        title: string;
+        position: string;
+        subtitle: string;
+        description: {
+          type: string;
+          text: string;
+        }[];
+        image: {
+          url: string;
+        };
+        link_repository: {
+          url: string;
+        };
+        link_preview: {
+          url: string;
+        };
+      };
+    }[];
+    page: string;
+    total_pages: string;
+  }
+
+  const response = (await client.query(
     prismic.predicate.at('document.type', 'project'),
     {
       pageSize: 6,
@@ -65,9 +94,11 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
         'project.description',
         'project.image',
         'project.subtitle',
+        'project.link_repository',
+        'project.link_preview',
       ],
     }
-  );
+  )) as unknown as Response;
 
   const posts = response.results.map((post) => {
     return {
@@ -88,6 +119,8 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
           year: 'numeric',
         }
       ),
+      link_repository: post.data.link_repository.url || null,
+      link_preview: post.data.link_preview.url || null,
     };
   });
 

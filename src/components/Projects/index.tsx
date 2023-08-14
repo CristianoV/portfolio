@@ -8,6 +8,8 @@ type Post = {
   image: string;
   description: string;
   updatedAt: string;
+  link_repository?: string;
+  link_preview?: string;
 };
 
 interface PostsProps {
@@ -43,6 +45,8 @@ export default function Projects({ posts }: PostsProps) {
                 image={post.image}
                 description={post.subTitle}
                 slug={post.slug}
+                link_repository={post.link_repository}
+                link_preview={post.link_preview}
               />
             ))}
           </div>

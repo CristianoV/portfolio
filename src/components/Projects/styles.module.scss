@@ -12,7 +12,7 @@
     text-align: center;
     letter-spacing: 0.01em;
     margin-bottom: 32px;
-    color: #FFFFFF; 
+    color: #ffffff;
   }
 
   section {
@@ -23,8 +23,18 @@
 
     div {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .container {
+    section {
+      div {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 }
